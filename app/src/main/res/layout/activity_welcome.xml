@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.activity.WelcomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.github.vivchar.viewpagerindicator.ViewPagerIndicator
+        android:id = "@+id/vp_indicator"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity = "center_horizontal|bottom"
+        android:layout_marginBottom = "20dp"
+        app:delimiterSize = "4dp"
+        app:itemScale = "1.5"
+        app:itemSelectedTint = "@color/colorAccent"
+        app:itemSize = "8dp"
+        app:itemTint = "@color/colorPrimary"
+        />
+</android.support.constraint.ConstraintLayout>

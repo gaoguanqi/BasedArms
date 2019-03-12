@@ -10,7 +10,7 @@
 
     <style name="SplashTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@drawable/layer_splash_bg</item>
-        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/public_white</item>
         <item name="android:windowIsTranslucent">false</item>
     </style>
 

@@ -34,4 +34,7 @@ dependencies {
     }
     api rootProject.ext.dependencies["paginate"]
     api rootProject.ext.dependencies["lottie"]
+    api rootProject.ext.dependencies["constraint-layout"]
+    api rootProject.ext.dependencies["utilcode"]
+    api rootProject.ext.dependencies["viewpager-indicator"]
 }
