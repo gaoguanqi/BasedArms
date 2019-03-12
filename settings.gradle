@@ -1,0 +1,1 @@
+include ':app', ':CommonRes', ':CommonSDK', ':CommonService'
