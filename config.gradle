@@ -109,6 +109,8 @@ ext {
             "umeng-analytics"          : "com.umeng.analytics:analytics:6.0.1",
             //user
             "utilcode"                  : "com.blankj:utilcode:1.23.7",
-            "viewpager-indicator"                  : "com.github.vivchar:ViewPagerIndicator:1.1.0"
+            "viewpager-indicator"                  : "com.github.vivchar:ViewPagerIndicator:1.1.0",
+            "banner"                  : "com.youth.banner:banner:1.4.10",
+            "immersionbar"                  : "com.gyf.immersionbar:immersionbar:2.3.3"
     ]
 }

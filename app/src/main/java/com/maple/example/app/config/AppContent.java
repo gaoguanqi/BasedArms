@@ -21,5 +21,6 @@ public interface AppContent {
     public static class BundleKey {
 
 
+        public static final String EXTRA_INDEX = "index";
     }
 }

@@ -49,9 +49,9 @@ public class WelcomeActivity extends BaseActivity {
     public void initData(@Nullable Bundle savedInstanceState) {
         SPUtils.getInstance().put(AppContent.SaveInfoKey.HASWECLOME, true);
         mList = new ArrayList<>();
-        mList.add(WelcomeFragment.newInstance());
-        mList.add(WelcomeFragment.newInstance());
-        mList.add(WelcomeFragment.newInstance());
+        mList.add(WelcomeFragment.newInstance(0));
+        mList.add(WelcomeFragment.newInstance(1));
+        mList.add(WelcomeFragment.newInstance(2));
         vp.setAdapter(new WelcomePagerAdapter(this.getSupportFragmentManager(),mList));
         vpIndicator.setupWithViewPager(vp);
         //vpIndicator.addOnPageChangeListener(mOnPageChangeListener);
