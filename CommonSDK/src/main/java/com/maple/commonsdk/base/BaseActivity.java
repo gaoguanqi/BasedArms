@@ -100,6 +100,8 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        // 必须调用该方法，防止内存泄漏
+        ImmersionBar.with(this).destroy();
         if (mUnbinder != null && mUnbinder != Unbinder.EMPTY)
             mUnbinder.unbind();
         this.mUnbinder = null;
