@@ -17,13 +17,10 @@ import com.maple.commonsdk.imgaEngine.config.CommonImageConfigImpl;
 import com.maple.commonsdk.utils.Utils;
 import com.maple.example.R;
 import com.maple.example.app.config.AppContent;
-import com.maple.example.app.global.RouterHubApp;
-import com.maple.example.mvp.ui.activity.SplashActivity;
+import com.maple.example.app.config.RouterHubApp;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 /**
  * author: gaogq

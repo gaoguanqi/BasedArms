@@ -11,7 +11,7 @@ import com.maple.commonsdk.base.BaseActivity;
 import com.maple.commonsdk.utils.Utils;
 import com.maple.example.R;
 import com.maple.example.app.config.AppContent;
-import com.maple.example.app.global.RouterHubApp;
+import com.maple.example.app.config.RouterHubApp;
 
 import java.util.concurrent.TimeUnit;
 

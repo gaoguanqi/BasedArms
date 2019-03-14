@@ -86,6 +86,8 @@ public class GlobalConfiguration implements ConfigModule {
 
             @Override
             public void attachBaseContext(@NonNull Context base) {
+
+
             }
 
             @Override
