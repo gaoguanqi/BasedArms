@@ -49,5 +49,6 @@ dependencies {
         exclude module: 'support-v4'
         exclude module: 'support-annotations'
     }
+    implementation rootProject.ext.dependencies["immersionbar"]
     api rootProject.ext.dependencies["retrofit-url-manager"]
 }

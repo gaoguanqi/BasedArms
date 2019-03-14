@@ -9,12 +9,14 @@ import android.util.AttributeSet;
 import android.view.InflateException;
 import android.view.View;
 
+import com.gyf.barlibrary.ImmersionBar;
 import com.jess.arms.base.delegate.IActivity;
 import com.jess.arms.integration.cache.Cache;
 import com.jess.arms.integration.cache.CacheType;
 import com.jess.arms.integration.lifecycle.ActivityLifecycleable;
 import com.jess.arms.mvp.IPresenter;
 import com.jess.arms.utils.ArmsUtils;
+import com.maple.commonsdk.R;
 import com.trello.rxlifecycle2.android.ActivityEvent;
 
 import javax.inject.Inject;
@@ -39,6 +41,13 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
     @Inject
     @Nullable
     protected P mPresenter;//如果当前页面逻辑简单, Presenter 可以为 null
+
+
+    /**
+     * 是否使用透明状态栏
+     * @return
+     */
+    protected boolean useTransStateBar() { return false; }
 
     @NonNull
     @Override
@@ -76,6 +85,15 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
             if (e instanceof InflateException) throw e;
             e.printStackTrace();
         }
+
+        if(useTransStateBar()){
+            ImmersionBar.with(this)
+                    .transparentStatusBar()
+                    .navigationBarColor(R.color.base_color_bar)
+                    .navigationBarDarkIcon(true)
+                    .init();
+        }
+
         initData(savedInstanceState);
     }
 

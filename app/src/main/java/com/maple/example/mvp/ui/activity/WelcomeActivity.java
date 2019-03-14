@@ -32,7 +32,10 @@ public class WelcomeActivity extends BaseActivity {
 
     private List<BaseFragment> mList;
 
-
+    @Override
+    protected boolean useTransStateBar() {
+        return true;
+    }
 
     @Override
     public void setupActivityComponent(@NonNull AppComponent appComponent) {

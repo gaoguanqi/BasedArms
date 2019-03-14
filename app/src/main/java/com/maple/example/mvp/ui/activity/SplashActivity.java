@@ -24,6 +24,11 @@ public class SplashActivity extends BaseActivity {
 
 
     @Override
+    protected boolean useTransStateBar() {
+        return true;
+    }
+
+    @Override
     public void setupActivityComponent(@NonNull AppComponent appComponent) {
 
     }

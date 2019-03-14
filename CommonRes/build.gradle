@@ -41,5 +41,4 @@ dependencies {
     api rootProject.ext.dependencies["utilcode"]
     api rootProject.ext.dependencies["viewpager-indicator"]
     api rootProject.ext.dependencies["banner"]
-    api rootProject.ext.dependencies["immersionbar"]
 }
