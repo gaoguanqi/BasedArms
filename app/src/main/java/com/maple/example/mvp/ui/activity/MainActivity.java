@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jess.arms.di.component.AppComponent;
 import com.maple.commonsdk.base.BaseActivity;
+import com.maple.commonsdk.receiver.NetBroadcastReceiver;
 import com.maple.example.R;
 import com.maple.example.app.config.RouterHubApp;
 

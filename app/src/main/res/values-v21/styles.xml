@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--启动页主题-->
+    <style name="Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/layer_splash_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/public_color_transparent</item>
+        <item name="android:navigationBarColor">@color/public_color_transparent</item>
+    </style>
+</resources>

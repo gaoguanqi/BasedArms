@@ -51,4 +51,5 @@ dependencies {
     }
     implementation rootProject.ext.dependencies["immersionbar"]
     api rootProject.ext.dependencies["retrofit-url-manager"]
+    api rootProject.ext.dependencies["utilcode"]
 }
