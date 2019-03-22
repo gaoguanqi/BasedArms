@@ -18,7 +18,6 @@ import com.jess.arms.utils.Preconditions;
  */
 public class BaseApplication extends Application implements App {
     private AppLifecycles mAppDelegate;
-
     /**
      * 这里会在 {@link com.jess.arms.base.BaseApplication#onCreate} 之前被调用,可以做一些较早的初始化
      * 常用于 MultiDex 以及插件化框架的初始化
